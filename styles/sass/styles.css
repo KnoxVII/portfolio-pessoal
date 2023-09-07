@@ -1,11 +1,11 @@
 * {
-  font-family: "Orbitron";
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
+  font-family: "Orbitron";
   background-color: #1A1A1A;
   color: #fff;
 }
@@ -18,10 +18,31 @@ body ul {
   list-style: none;
 }
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
+  font-family: "Inter", sans-serif;
 }
-header-nav ul {
+.header-navbar {
+  height: 40px;
+}
+.header-navbar ul {
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-navbar ul li {
+  margin: 0 1rem;
+  font-size: 0.8rem;
+  padding: 10px 0px;
+}
+.header-navbar ul .active {
+  border-radius: 10px;
+  background-color: #F9E650;
+  box-shadow: 0px 0px 20px 0px #EBC634;
+}
+.header-languages img {
+  background-color: #1A1A1A;
+  width: 30px;
 }/*# sourceMappingURL=styles.css.map */

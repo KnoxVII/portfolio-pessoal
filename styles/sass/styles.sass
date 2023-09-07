@@ -1,13 +1,14 @@
 @use 'variables'
+@use 'mixins'
 
 *
-  font-family: 'Orbitron'
   padding: 0
   margin: 0
   box-sizing: border-box
 
 body
-  background-color: #fff  
+  font-family: 'Orbitron'
+  background-color: variables.$light-black 
   color: variables.$white
 
   a
@@ -21,11 +22,27 @@ body
 .header
   display: flex    
   justify-content: space-between
-  background-color: #fff
+  font-family: 'Inter', sans-serif
 
   &-navbar
-    background-color: variables.$white
+    height: 40px
+
     ul
       height: 100%
       @include mixins.flex-center
 
+      li
+        margin: 0 1rem       
+        font-size: .8rem 
+        padding: 10px 0px
+
+      .active
+        border-radius: 10px
+        background-color: variables.$light-yellow
+        box-shadow: 0px 0px 20px 0px variables.$dark-yellow 
+        
+  &-languages
+    img
+      background-color: variables.$light-black
+      width: 30px 
+      
