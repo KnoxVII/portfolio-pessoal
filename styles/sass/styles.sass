@@ -1,0 +1,31 @@
+@use 'variables'
+
+*
+  font-family: 'Orbitron'
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+body
+  background-color: #fff  
+  color: variables.$white
+
+  a
+    color: variables.$white
+    text-decoration: none
+    transition: .5s  
+
+  ul 
+    list-style: none  
+
+.header
+  display: flex    
+  justify-content: space-between
+  background-color: #fff
+
+  &-navbar
+    background-color: variables.$white
+    ul
+      height: 100%
+      @include mixins.flex-center
+
