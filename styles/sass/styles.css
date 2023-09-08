@@ -1,48 +1,86 @@
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
 }
 
 body {
-  font-family: "Orbitron";
   background-color: #1A1A1A;
   color: #fff;
+  font-family: "Orbitron";
+  max-width: 1200px;
 }
 body a {
   color: #fff;
-  text-decoration: none;
   transition: 0.5s;
 }
-body ul {
-  list-style: none;
-}
-
-.header {
+body .header {
+  align-items: center;
+  background-color: #1A1A1A;
   display: flex;
-  justify-content: space-between;
   font-family: "Inter", sans-serif;
+  justify-content: space-around;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.header-navbar {
-  height: 40px;
-}
-.header-navbar ul {
+body .header_navbar ul {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.header-navbar ul li {
+body .header_navbar ul li {
   margin: 0 1rem;
   font-size: 0.8rem;
-  padding: 10px 0px;
 }
-.header-navbar ul .active {
-  border-radius: 10px;
+body .header_navbar ul .active {
   background-color: #F9E650;
-  box-shadow: 0px 0px 20px 0px #EBC634;
+  box-shadow: 0px 0px 10px 0px #EBC634;
+  color: #0F0F0F;
+  font-weight: bold;
 }
-.header-languages img {
-  background-color: #1A1A1A;
-  width: 30px;
+body .header_navbar ul a {
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+body .header_navbar ul a:hover {
+  background-color: #F9E650;
+  box-shadow: 0px 0px 10px 0px #EBC634;
+  color: #0F0F0F;
+  font-weight: bold;
+}
+body .main_infos {
+  max-width: 50%;
+  margin-top: 6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000;
+}
+body .main_infos #profission {
+  font-family: "roboto mono";
+  font-weight: 400;
+}
+body .main_infos .main_social-media i {
+  cursor: pointer;
+  width: 50px;
+}
+body .main_infos #main_cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+body .main_perfil-photo img {
+  position: absolute;
+  top: 27%;
+  right: 1%;
+  width: 32em;
 }/*# sourceMappingURL=styles.css.map */

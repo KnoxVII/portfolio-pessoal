@@ -2,47 +2,93 @@
 @use 'mixins'
 
 *
-  padding: 0
-  margin: 0
   box-sizing: border-box
+  margin: 0
+  list-style: none  
+  padding: 0
+  text-decoration: none
+
+
 
 body
-  font-family: 'Orbitron'
-  background-color: variables.$light-black 
+  background-color: variables.$light-black
   color: variables.$white
+  font-family: 'Orbitron'
+  max-width: 1200px
+
 
   a
     color: variables.$white
-    text-decoration: none
     transition: .5s  
 
-  ul 
-    list-style: none  
+  .header
+    align-items: center
+    background-color: variables.$light-black
+    display: flex    
+    font-family: 'Inter', sans-serif
+    justify-content: space-around
+    padding: 10px
+    // position: fixed
+    width: 100%
 
-.header
-  display: flex    
-  justify-content: space-between
-  font-family: 'Inter', sans-serif
+    &_navbar
 
-  &-navbar
-    height: 40px
+      ul
+        height: 100%
+        @include mixins.flex-center
 
-    ul
-      height: 100%
+        li
+          margin: 0 1rem       
+          font-size: .8rem 
+          
+        .active
+          background-color: variables.$light-yellow
+          box-shadow: 0px 0px 10px 0px variables.$dark-yellow 
+          color: variables.$black  
+          font-weight: bold
+
+        a
+          border-radius: 5px
+          padding: 5px 20px 
+          &:hover
+            background-color: variables.$light-yellow
+            box-shadow: 0px 0px 10px 0px variables.$dark-yellow 
+            color: variables.$black 
+            font-weight: bold 
+
+          
+    &_languages 
+    @include mixins.flex-center 
+
+  .main
+    &_infos
+      max-width: 50%
+      margin-top: 6em
       @include mixins.flex-center
+      flex-direction: column
+      background-color: #000
 
-      li
-        margin: 0 1rem       
-        font-size: .8rem 
-        padding: 10px 0px
+      #profission
+        font-family: 'roboto mono'
+        font-weight: 400
 
-      .active
-        border-radius: 10px
-        background-color: variables.$light-yellow
-        box-shadow: 0px 0px 20px 0px variables.$dark-yellow 
-        
-  &-languages
-    img
-      background-color: variables.$light-black
-      width: 30px 
+      .main_social-media  
+        i
+          cursor: pointer
+          width: 50px
+    
+      #main_cta
+        @include mixins.flex-center
+        flex-direction: column
+        cursor: pointer
+  
+    &_perfil-photo
+      img
+        position: absolute
+        top: 27%
+        right: 1%
+        width: 32em
       
+
+
+  
