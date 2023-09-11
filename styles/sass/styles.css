@@ -61,7 +61,6 @@ body .main_infos {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #000;
 }
 body .main_infos #profission {
   font-family: "roboto mono";
