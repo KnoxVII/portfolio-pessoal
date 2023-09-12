@@ -10,11 +10,24 @@ body {
   background-color: #1A1A1A;
   color: #fff;
   font-family: "Orbitron";
-  max-width: 1200px;
+  max-width: auto;
+  height: 100vh;
 }
 body a {
   color: #fff;
   transition: 0.5s;
+}
+body .title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+body .title::before {
+  background-image: url("../../assets/images/graphic.svg");
+}
+body .container-shape {
+  background-size: 100%;
+  box-shadow: 0px 0px 40px #EBC634;
+  position: absolute;
 }
 body .header {
   align-items: center;
@@ -35,8 +48,8 @@ body .header_navbar ul {
   justify-content: center;
 }
 body .header_navbar ul li {
-  margin: 0 1rem;
-  font-size: 0.8rem;
+  margin: 0.5rem 1rem;
+  font-size: 1.2rem;
 }
 body .header_navbar ul .active {
   background-color: #F9E650;
@@ -54,32 +67,95 @@ body .header_navbar ul a:hover {
   color: #0F0F0F;
   font-weight: bold;
 }
+body .main {
+  background: radial-gradient(circle, rgb(51, 51, 51) 0%, rgb(26, 26, 26) 55%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 92%;
+}
 body .main_infos {
   max-width: 50%;
-  margin-top: 6em;
+  padding: 10rem 1rem 4rem 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
+body .main_infos #name {
+  font-size: 3.5rem;
+}
 body .main_infos #profission {
+  color: #F9E650;
+  text-shadow: 0px 0px 15px #EBC634;
   font-family: "roboto mono";
   font-weight: 400;
+  font-size: 1.5rem;
+  padding: 0 0 0.8rem 0;
 }
-body .main_infos .main_social-media i {
+body .main_infos .main_social-media img {
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  color: #0F0F0F;
   cursor: pointer;
-  width: 50px;
+  font-size: 3rem;
+  margin: 2rem 0.5rem;
+  width: 60px;
 }
 body .main_infos #main_cta {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 1rem;
+}
+body .main_infos #main_cta .main_btn {
+  background: linear-gradient(180deg, #1A1A1A 0%, #262626 100%);
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 0.8rem;
+  width: 20rem;
+}
+body .main #main_container-shape {
+  background-image: url("../../assets/images/bg1.svg");
+  background-repeat: no-repeat;
+  bottom: 0;
+  height: 85%;
+  right: 0;
+  width: 45%;
+  position: absolute;
 }
 body .main_perfil-photo img {
+  bottom: 0;
   position: absolute;
-  top: 27%;
   right: 1%;
-  width: 32em;
+  width: 40rem;
+}
+body #about {
+  position: relative;
+  background: rgb(26, 26, 26);
+  background: linear-gradient(211deg, rgb(26, 26, 26) 65%, rgb(51, 51, 51) 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  box-shadow: 0px 0px 40px #EBC634;
+}
+body #about::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 3.3rem;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/bg2.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body #about .title {
+  margin-left: 18rem;
 }/*# sourceMappingURL=styles.css.map */
