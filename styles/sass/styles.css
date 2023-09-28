@@ -84,6 +84,7 @@ body .container-shape {
 }
 body .header {
   align-items: center;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.466);
   display: flex;
   font-family: "Inter", sans-serif;
   justify-content: space-around;
@@ -391,9 +392,9 @@ body .main_infos #main_cta .main_cv .button__text {
 }
 body .main_infos #main_cta .main_cv .button__icon {
   position: absolute;
-  transform: translateX(280px);
+  transform: translateX(268px);
   height: 100%;
-  width: 39px;
+  width: 50px;
   background: linear-gradient(180deg, #F9E650 0%, #E8A702 100%);
   display: flex;
   align-items: center;
@@ -401,10 +402,11 @@ body .main_infos #main_cta .main_cv .button__icon {
 }
 body .main_infos #main_cta .main_cv .button__icon .svg {
   fill: #1A1A1A;
-  width: 1.3rem;
+  width: 2em;
 }
 body .main_infos #main_cta .main_cv:hover {
   border: none;
+  box-shadow: 0px 0px 10px 0px #EBC634;
 }
 body .main_infos #main_cta .main_cv:hover .button__text {
   color: transparent;
