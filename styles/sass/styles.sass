@@ -139,7 +139,7 @@ body
       background-position: top right
       background-repeat: no-repeat
       background-size: auto
-      box-shadow: 0px 0px 15px variables.$dark-yellow 
+      // box-shadow: 0px 0px 15px variables.$dark-yellow 
       pointer-events: none
 
     &_infos
@@ -304,7 +304,6 @@ body
 
         img
           width: 2.5rem
-          margin-top: .3rem
 
           &:hover
             color: variables.$light-yellow
@@ -319,19 +318,73 @@ body
           background: linear-gradient(180deg, #1A1A1A 0%, #262626 100%)
           border-radius: 5px
           box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.500)
+          color: #fff
           cursor: pointer
+          font-family: 'Orbitron'
           font-size: 1.5rem 
           height: 3.5rem
           margin-bottom: 1rem
-          text-align: center
+          overflow: hidden
           padding: .8rem
+          text-align: center
           width: 20rem
-          transition: background .5s, color .5s ease-in-out, box-shadow .5s ease-in-out
+          transition: all .5s
 
           &:hover
             background: linear-gradient(180deg, #F9E650 0%, #E8A702 100%)
-            box-shadow: 0px 0px 20px 0px #E8A702
+            box-shadow: 0px 0px 10px 0px variables.$dark-yellow
+            border: none
             color: variables.$black
+            font-weight: bold
+      
+        .main_cv
+          position: relative
+          width: 20rem
+          height: 3.5rem
+          cursor: pointer
+          display: flex
+          align-items: center
+          background-color: variables.$light-black
+          overflow: hidden
+
+          &, .button__icon, .button__text
+            transition: all .5s
+
+          .button__text
+            transform: translateX(22px)
+            color: #fff
+            font-family: 'Orbitron'
+            font-size: 1.5rem 
+
+          .button__icon
+            position: absolute
+            transform: translateX(280px)
+            height: 100%
+            width: 39px
+            background: linear-gradient(180deg, #F9E650 0%, #E8A702 100%)
+            display: flex
+            align-items: center
+            justify-content: center
+
+            .svg
+              fill: variables.$light-black
+              width: 1.3rem
+
+          &:hover
+            border: none
+
+            .button__text
+              color: transparent
+
+            .button__icon
+              width: 320px
+              transform: translateX(0)
+
+          &:active
+            background: linear-gradient(180deg, #e0ce46 0%, #d49800 100%)
+
+            .button__icon
+              background-color: #ffffff
 
     &_perfil-photo
       img

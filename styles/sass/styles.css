@@ -142,7 +142,6 @@ body .main::before {
   background-position: top right;
   background-repeat: no-repeat;
   background-size: auto;
-  box-shadow: 0px 0px 15px #EBC634;
   pointer-events: none;
 }
 body .main_infos {
@@ -336,7 +335,6 @@ body .main_infos .main_social-media .icon_box a:hover::before {
 }
 body .main_infos .main_social-media img {
   width: 2.5rem;
-  margin-top: 0.3rem;
 }
 body .main_infos .main_social-media img:hover {
   color: #f9e650;
@@ -353,19 +351,73 @@ body .main_infos #main_cta .main_btn {
   background: linear-gradient(180deg, #1A1A1A 0%, #262626 100%);
   border-radius: 5px;
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  color: #fff;
   cursor: pointer;
+  font-family: "Orbitron";
   font-size: 1.5rem;
   height: 3.5rem;
   margin-bottom: 1rem;
-  text-align: center;
+  overflow: hidden;
   padding: 0.8rem;
+  text-align: center;
   width: 20rem;
-  transition: background 0.5s, color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  transition: all 0.5s;
 }
 body .main_infos #main_cta .main_btn:hover {
   background: linear-gradient(180deg, #F9E650 0%, #E8A702 100%);
-  box-shadow: 0px 0px 20px 0px #E8A702;
+  box-shadow: 0px 0px 10px 0px #EBC634;
+  border: none;
   color: #0F0F0F;
+  font-weight: bold;
+}
+body .main_infos #main_cta .main_cv {
+  position: relative;
+  width: 20rem;
+  height: 3.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: #1A1A1A;
+  overflow: hidden;
+}
+body .main_infos #main_cta .main_cv, body .main_infos #main_cta .main_cv .button__icon, body .main_infos #main_cta .main_cv .button__text {
+  transition: all 0.5s;
+}
+body .main_infos #main_cta .main_cv .button__text {
+  transform: translateX(22px);
+  color: #fff;
+  font-family: "Orbitron";
+  font-size: 1.5rem;
+}
+body .main_infos #main_cta .main_cv .button__icon {
+  position: absolute;
+  transform: translateX(280px);
+  height: 100%;
+  width: 39px;
+  background: linear-gradient(180deg, #F9E650 0%, #E8A702 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .main_infos #main_cta .main_cv .button__icon .svg {
+  fill: #1A1A1A;
+  width: 1.3rem;
+}
+body .main_infos #main_cta .main_cv:hover {
+  border: none;
+}
+body .main_infos #main_cta .main_cv:hover .button__text {
+  color: transparent;
+}
+body .main_infos #main_cta .main_cv:hover .button__icon {
+  width: 320px;
+  transform: translateX(0);
+}
+body .main_infos #main_cta .main_cv:active {
+  background: linear-gradient(180deg, #e0ce46 0%, #d49800 100%);
+}
+body .main_infos #main_cta .main_cv:active .button__icon {
+  background-color: #ffffff;
 }
 body .main_perfil-photo img {
   bottom: 0;
