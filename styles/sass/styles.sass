@@ -60,7 +60,6 @@ body
     to
       transform: translate3d(-7rem, 0, 0)
 
-
   a
     color: variables.$white
 
@@ -128,7 +127,7 @@ body
     background-repeat: no-repeat
     background-size: contain
     height: 92%
-
+    
     &::before
       content: ""
       position: absolute
@@ -152,6 +151,103 @@ body
       #name
         text-shadow: 0px 5px 5px  #000000b9
         font-size: 3.5rem
+        -webkit-animation: text-flicker-in-glow 4s ease-in-out both
+        animation: text-flicker-in-glow 4s ease-in-out both
+
+        @-webkit-keyframes text-flicker-in-glow
+          0%
+            opacity: 0
+          10%
+            opacity: 0
+            text-shadow: none
+          10.1%
+            opacity: 1
+            text-shadow: none
+          10.2%
+            opacity: 0
+            text-shadow: none
+          20%
+            opacity: 0
+            text-shadow: none
+          20.1%
+            opacity: 1
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.25)
+          20.6%
+            opacity: 0
+            text-shadow: none
+          30%
+            opacity: 0
+            text-shadow: none
+          30.1%
+            opacity: 1
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25)
+          30.5%
+            opacity: 1
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25)
+          30.6%
+            opacity: 0
+            text-shadow: none
+          45%
+            opacity: 0
+            text-shadow: none
+          45.1%
+            opacity: 1
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25)
+          50%
+            opacity: 1
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25)
+          55%
+            opacity: 1
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25)
+          55.1%
+            opacity: 0
+            text-shadow: none
+          57%
+            opacity: 0
+            text-shadow: none
+          57.1%
+            opacity: 1
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35)
+          60%
+            opacity: 1
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35)
+          60.1%
+            opacity: 0
+            text-shadow: none
+          65%
+            opacity: 0
+            text-shadow: none
+          65.1%
+            opacity: 1
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1)
+          75%
+            opacity: 1
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1)
+          75.1%
+            opacity: 0
+            text-shadow: none
+          77%
+            opacity: 0
+            text-shadow: none
+          77.1%
+            opacity: 1
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1)
+          85%
+            opacity: 1
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.4), 0 0 110px rgba(255, 255, 255, 0.2), 0 0 100px rgba(255, 255, 255, 0.1)
+          85.1%
+            opacity: 0
+            text-shadow: none
+          86%
+            opacity: 0
+            text-shadow: none
+          86.1%
+            opacity: 1
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1)
+          100%
+            opacity: 1
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1)
+
 
 
       #profission
@@ -165,25 +261,49 @@ body
       .main_social-media  
         display: flex
 
-        .icon_box
-          align-items: center
-          background: variables.$light-black
-          border-radius: 5px
-          box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.500)
-          cursor: pointer
+
+        .icon_box 
+          position: relative
+          border: none
+          margin: 10px
+          background-color: transparent
+
+        .icon_box a 
+          width: 3.5rem
+          height: 3.5rem
+          border-radius: 15px
           display: flex
           justify-content: center
-          margin: 2rem .5rem
-          height: 4rem
-          width: 4rem
-          transition: .2s ease-in-out
+          align-items: center
+          border: 1px solid rgba(255, 255, 255, 0.5)
+          border-right: 1px solid rgba(255, 255, 255, 0.2)
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.836)
+          backdrop-filter: blur(2px)
+          transition: 0.5s
+          overflow: hidden
+          // background-color: rgba(255, 255, 255, 0.1)
 
           &:hover
             // box-shadow: 0px 0px 20px 0px #E8A702
-            transform: scale(1.2)          
+            transform: scale(1.2)   
+
+          &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 50px
+            height: 100%
+            background-color: rgba(255, 255, 255, 0.5)
+            transform: skewX(45deg) translateX(150px)
+            transition: 0.5s ease
+
+          &:hover::before
+            transform: skewX(45deg) translateX(-150px)
 
         img
-          width: 3rem
+          width: 2.5rem
           margin-top: .3rem
 
           &:hover
