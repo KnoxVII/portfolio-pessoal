@@ -65,7 +65,8 @@ body
 
   .title
     font-size: 2rem
-    font-weight: 400
+    font-weight: 500
+    margin-bottom: 8rem
 
   .title::before
     background-image: url('../../assets/images/graphic.svg') 
@@ -81,7 +82,6 @@ body
     display: flex    
     font-family: 'Inter', sans-serif
     justify-content: space-around
-    padding: 10px
     margin-top: -1px
     position: fixed
     width: 100%
@@ -92,6 +92,9 @@ body
     background-color: #1a1a1ad7
     border: 1px solid rgba(255, 255, 255, 0.125)
 
+    &_logo
+      width: 2rem
+
     &_navbar
       ul
         height: 100%
@@ -100,25 +103,48 @@ body
         li
           margin: .5rem 1rem  
           font-size: 1.2rem 
-          
-          
+
         .active
           background: linear-gradient(180deg, #F9E650 0%, #E8A702 100%)
           box-shadow: 0px 0px 10px 0px variables.$dark-yellow 
+          border: 1px solid variables.$orange
           color: variables.$black  
           font-weight: bold
 
         a
           border-radius: 5px
-          padding: 5px 20px 
+          padding: 5px 15px 
           transition: all 0.5s ease-in-out
           &:hover
             background: linear-gradient(180deg, #F9E650 0%, #E8A702 100%)
             box-shadow: 0px 0px 10px 0px variables.$dark-yellow 
+            border: 1px solid variables.$orange
             color: variables.$black 
-            font-weight: bold 
-            
-      
+            font-weight: bold
+
+      .header_languages 
+        position: absolute
+        top: 15%
+        right: 25px
+        text-align: center
+        
+        li 
+          display: inline
+          margin-left: 5px
+
+          a
+            display: inline-block 
+            vertical-align: middle 
+
+            img 
+              width: 30px
+              height: 30px
+
+              &:hover
+                cursor: pointer
+                border: 1px solid variables.$dark-yellow
+                box-shadow: 0px 0px 10px 0px variables.$dark-yellow 
+        
     // &_languages 
     // @include mixins.flex-center 
 
@@ -414,6 +440,7 @@ body
     background-repeat: no-repeat
     background-size: contain
     height: 100vh
+    text-align: left
     // box-shadow: 0px 0px 40px variables.$dark-yellow
 
     &::after
@@ -436,12 +463,24 @@ body
         background-image: url('../../assets/images/graphic.svg')
         background-repeat: no-repeat
         background-position: top left
+        background-size: 140px
         content: ""
         height: 100%
         position: absolute
         text-shadow: 0px 0px 15px variables.$dark-yellow
-        right: 1rem
+        left: 13.5rem
+        top: 4.7rem
         width: 100%
+
+    p
+      font-size: 1.4rem
+      line-height: 1.7
+      padding: 0 80px  
+      width: 60%
+
+    strong
+      color: variables.$light-yellow
+
 
   // HABILIDADES
   #habilities
@@ -474,13 +513,29 @@ body
         background-image: url('../../assets/images/graphic.svg')
         background-repeat: no-repeat
         background-position: top left
+        background-size: 140px
         content: ""
         height: 100%
         position: absolute
         text-shadow: 0px 0px 15px variables.$dark-yellow
-        right: 1rem
+        left: 29rem
+        top: 4.7rem
         width: 100%
 
+    .technology_box
+      display: grid
+      grid-template-columns: repeat(4, 1fr)
+      gap: 5px
+      justify-content: center
+      align-items: center
+      height: 50vh
+      
+      img
+        cursor: pointer
+        width: 5rem
+
+    .technology_info
+      display: none
   // PROJETOS
   #projects
     position: relative
@@ -512,11 +567,13 @@ body
         background-image: url('../../assets/images/graphic.svg')
         background-repeat: no-repeat
         background-position: top left
+        background-size: 140px
         content: ""
         height: 100%
         position: absolute
         text-shadow: 0px 0px 15px variables.$dark-yellow
-        right: 1rem
+        left: 30.5rem
+        top: 4.7rem
         width: 100%
   // CERTIFICAÇÕES   
   #certifications
@@ -549,9 +606,11 @@ body
         background-image: url('../../assets/images/graphic.svg')
         background-repeat: no-repeat
         background-position: top left
+        background-size: 140px
         content: ""
         height: 100%
         position: absolute
         text-shadow: 0px 0px 15px variables.$dark-yellow
-        right: 1rem
+        left: 28rem
+        top: 4.7rem
         width: 100%

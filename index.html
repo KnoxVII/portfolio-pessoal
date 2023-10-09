@@ -22,7 +22,7 @@
 </head>
 <body>
   <header class="header">
-    <img src="assets/favicon/favicon.ico" alt="Logo">
+    <img class="header_logo" src="assets/favicon/favicon.ico" alt="Logo">
     <nav class="header_navbar">
       <ul>
           <li><a href="#inicio" class="active">Início</a></li>
@@ -32,11 +32,11 @@
           <li><a href="#certificacoes">Certificações</a></li>
           <li><a href="#contato">Contato</a></li>
       </ul>
+      <div class="header_languages">
+        <li><a href="#" id="language-pt" data-lang="pt"><img src="assets/icons/brasil.svg" alt="Bandeira do Brasil"></a></li>
+        <li><a href="#" id="language-en" data-lang="en"><img src="assets/icons/usa.svg" alt="Bandeira dos Estados Unidos"></a></li>
+      </div>
     </nav>
-    <div class="header_languages">
-      <button id="brasil"><img src="assets/icons/brasil.svg" alt="Bandeira do Brasil"></button>
-      <button id="usa"><img src="assets/icons/usa.svg" alt="Bandeira dos Estados Unidos"></button>
-    </div>
   </header>
   <main class="main" aria-label="Pagina principa">
     <div class="main_infos">
@@ -65,10 +65,55 @@
   </main>
   <section id="about">
     <h2 class="title">Sobre mim</h2>
-    <p>Olá, sou Vinicius Pacheco, um desenvolvedor front-end apaixonado por arte, games e tecnologia.  Transformo conceitos em interfaces interativas e amigáveis. Vamos juntos explorar o mundo digital e criar experiências únicas!</p>
+    <p>Olá, sou <strong>Vinícius Pacheco</strong>, um desenvolvedor front-end apaixonado por arte, games e tecnologia.  Transformo conceitos em interfaces interativas e amigáveis. Vamos juntos explorar o mundo digital e criar experiências únicas!</p>
   </section>
   <section id="habilities">
     <h2 class="title">Habilidades</h2>
+    <div class="technology_box">
+      <div class="html_box" data-tecnologia="HTML">
+        <img src="assets/icons/habilities/html.svg" alt="HTML">
+      </div>
+      <div class="css_box" data-tecnologia="CSS">
+        <img src="assets/icons/habilities/html.svg" alt="CSS">
+      </div>
+      <div class="js_box" data-tecnologia="Javascript">
+        <img src="assets/icons/habilities/javascript.svg" alt="Javascript">
+      </div>
+      <div class="react_box" data-tecnologia="React">
+        <img src="assets/icons/habilities/react.svg" alt="React">
+      </div>
+      <div class="sass_box" data-tecnologia="SASS">
+        <img src="assets/icons/habilities/sass.svg" alt="SASS">
+      </div>
+      <div class="bs_box" data-tecnologia="Bootstrap">
+        <img src="assets/icons/habilities/bootstrap.svg" alt="Bootstrap">
+      </div>
+      <div class="git_box" data-tecnologia="GIT">
+        <img src="assets/icons/habilities/git.svg" alt="GIT">
+      </div>
+      <div class="github_box" data-tecnologia="Github">
+        <img src="assets/icons/habilities/Github.svg" alt="Github">
+      </div>
+      <div class="figma_box" data-tecnologia="Figma">
+        <img src="assets/icons/habilities/figma.svg" alt="Figma">
+      </div>
+      <div class="ps_box" data-tecnologia="Photoshop">
+        <img src="assets/icons/habilities/photoshop.svg" alt="Photoshop">
+      </div>
+      <div class="illustrator_box" data-tecnologia="illustrator">
+        <img src="assets/icons/habilities/illustrator.svg" alt="illustrator">
+      </div>
+      <div class="davinci_box" data-tecnologia="davinci">
+        <img src="assets/icons/habilities/davinci.svg" alt="davinci">
+      </div>
+    </div>
+    
+    <div class="technology_info">
+      <h2>Informações sobre a tecnologia</h2>
+      <p id="tecnologia-nome">Nome da Tecnologia</p>
+      <p id="tecnologia-descricao">Descrição da Tecnologia</p>
+    </div>
+    </div>
   </section>
   <section id="projects">
     <h2 class="title">Projetos</h2>
