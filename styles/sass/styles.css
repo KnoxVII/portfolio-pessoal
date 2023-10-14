@@ -99,7 +99,7 @@ body .header {
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 body .header_logo {
-  width: 2rem;
+  width: 1.8rem;
 }
 body .header_navbar ul {
   height: 100%;
@@ -109,7 +109,7 @@ body .header_navbar ul {
 }
 body .header_navbar ul li {
   margin: 0.5rem 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 body .header_navbar ul .active {
   background: linear-gradient(180deg, #F9E650 0%, #E8A702 100%);
@@ -120,7 +120,7 @@ body .header_navbar ul .active {
 }
 body .header_navbar ul a {
   border-radius: 5px;
-  padding: 5px 15px;
+  padding: 3px 15px;
   transition: all 0.5s ease-in-out;
 }
 body .header_navbar ul a:hover {
@@ -542,16 +542,41 @@ body #habilities .title::before {
   width: 100%;
 }
 body #habilities .technology_box {
+  align-items: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  height: 50vh;
+  width: 50%;
+}
+body #habilities .technology_box .glass_container {
+  align-items: center;
+  backdrop-filter: blur(20px) saturate(100%);
+  -webkit-backdrop-filter: blur(20px) saturate(100%);
+  background: linear-gradient(-45deg, rgb(26, 26, 26) 20%, #ad974f 150%);
+  background-color: rgba(20, 20, 20, 0.7);
+  border: 2px solid rgba(255, 255, 255, 0.125);
+  border-radius: 20px;
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.6235294118);
+  display: flex;
+  justify-content: center;
+  height: 8rem;
+  width: 8rem;
+  transition: background 0.3s;
+}
+body #habilities .technology_box .glass_container .technology_icon {
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
 }
-body #habilities .technology_box img {
-  cursor: pointer;
-  width: 5rem;
+body #habilities .technology_box .glass_container img {
+  height: 100%;
+  width: 100%;
 }
 body #habilities .technology_info {
   display: none;
@@ -631,4 +656,99 @@ body #certifications .title::before {
   left: 28rem;
   top: 4.7rem;
   width: 100%;
+}
+body .contact_footer {
+  background: url("../../assets/images/hud.svg") no-repeat center bottom, linear-gradient(#E8A702, #F9E650);
+  background-size: contain;
+}
+body #contact {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 5%;
+  position: relative;
+}
+body #contact .contact-form {
+  flex: 1;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+}
+body #contact .contact-form h2 {
+  color: #0F0F0F;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+body #contact .contact-form form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+body #contact .contact-form form .form-group label {
+  color: #0F0F0F;
+  font-weight: bold;
+}
+body #contact .contact-form form .form-group input, body #contact .contact-form form .form-group textarea {
+  color: #fff;
+  background-color: #0F0F0F;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  font-family: "Orbitron";
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}
+body #contact .contact-form form .form-group #message {
+  height: 200px;
+}
+body #contact .contact-form form button {
+  background: transparent;
+  border: 2px solid #0F0F0F;
+  padding: 0.5rem 2rem;
+  color: #0F0F0F;
+  font-family: "Orbitron";
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background 0.3s;
+}
+body #contact .contact-form form button:hover {
+  background: #E8A702;
+}
+body #contact .contact-info {
+  flex: 1;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+body #contact .contact-info h2 {
+  color: #0F0F0F;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+body #contact .contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+body #contact .contact-info ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+body #contact .contact-info ul li .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+  background: url("seu-icon.png") no-repeat;
+  background-size: cover;
+}
+body #contact .contact-info ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+body footer {
+  color: #0F0F0F;
+  font-weight: bold;
+  padding-bottom: 2rem;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */

@@ -70,41 +70,65 @@
   <section id="habilities">
     <h2 class="title">Habilidades</h2>
     <div class="technology_box">
-      <div class="html_box" data-tecnologia="HTML">
-        <img src="assets/icons/habilities/html.svg" alt="HTML">
+      <div class="glass_container">
+        <div class="technology_icon" id="html_box" data-tecnologia="HTML">
+          <img src="assets/icons/habilities/html.svg" alt="HTML">
+        </div>
       </div>
-      <div class="css_box" data-tecnologia="CSS">
-        <img src="assets/icons/habilities/html.svg" alt="CSS">
+      <div class="glass_container">
+        <div class="technology_icon" id="css_box" data-tecnologia="CSS">
+          <img src="assets/icons/habilities/html.svg" alt="CSS">
+        </div>
       </div>
-      <div class="js_box" data-tecnologia="Javascript">
-        <img src="assets/icons/habilities/javascript.svg" alt="Javascript">
+      <div class="glass_container">
+        <div class="technology_icon" id="js_box" data-tecnologia="Javascript">
+          <img src="assets/icons/habilities/javascript.svg" alt="Javascript">
+        </div>
       </div>
-      <div class="react_box" data-tecnologia="React">
-        <img src="assets/icons/habilities/react.svg" alt="React">
+      <div class="glass_container">
+        <div class="technology_icon" id="react_box" data-tecnologia="React">
+          <img src="assets/icons/habilities/react.svg" alt="React">
+        </div>
       </div>
-      <div class="sass_box" data-tecnologia="SASS">
-        <img src="assets/icons/habilities/sass.svg" alt="SASS">
+      <div class="glass_container">
+        <div class="technology_icon" id="sass_box" data-tecnologia="SASS">
+          <img src="assets/icons/habilities/sass.svg" alt="SASS">
+        </div>
       </div>
-      <div class="bs_box" data-tecnologia="Bootstrap">
-        <img src="assets/icons/habilities/bootstrap.svg" alt="Bootstrap">
+      <div class="glass_container">
+        <div class="technology_icon" id="bs_box" data-tecnologia="Bootstrap">
+          <img src="assets/icons/habilities/bootstrap.svg" alt="Bootstrap">
+        </div>
       </div>
-      <div class="git_box" data-tecnologia="GIT">
-        <img src="assets/icons/habilities/git.svg" alt="GIT">
+      <div class="glass_container">
+        <div class="technology_icon" id="git_box" data-tecnologia="GIT">
+          <img src="assets/icons/habilities/git.svg" alt="GIT">
+        </div>
       </div>
-      <div class="github_box" data-tecnologia="Github">
-        <img src="assets/icons/habilities/Github.svg" alt="Github">
+      <div class="glass_container">
+        <div class="technology_icon" id="github_box" data-tecnologia="Github">
+          <img src="assets/icons/habilities/Github.svg" alt="Github">
+        </div>
       </div>
-      <div class="figma_box" data-tecnologia="Figma">
-        <img src="assets/icons/habilities/figma.svg" alt="Figma">
+      <div class="glass_container">
+        <div class="technology_icon" id="figma_box" data-tecnologia="Figma">
+          <img src="assets/icons/habilities/figma.svg" alt="Figma">
+        </div>
       </div>
-      <div class="ps_box" data-tecnologia="Photoshop">
-        <img src="assets/icons/habilities/photoshop.svg" alt="Photoshop">
+      <div class="glass_container">
+        <div class="technology_icon" id="ps_box" data-tecnologia="Photoshop">
+          <img src="assets/icons/habilities/photoshop.svg" alt="Photoshop">
+        </div>
       </div>
-      <div class="illustrator_box" data-tecnologia="illustrator">
-        <img src="assets/icons/habilities/illustrator.svg" alt="illustrator">
+      <div class="glass_container">
+        <div class="technology_icon" id="illustrator_box" data-tecnologia="illustrator">
+          <img src="assets/icons/habilities/illustrator.svg" alt="illustrator">
+        </div>
       </div>
-      <div class="davinci_box" data-tecnologia="davinci">
-        <img src="assets/icons/habilities/davinci.svg" alt="davinci">
+      <div class="glass_container">
+        <div class="technology_icon" id="davinci_box" data-tecnologia="davinci">
+          <img src="assets/icons/habilities/davinci.svg" alt="davinci">
+        </div>
       </div>
     </div>
     
@@ -125,14 +149,62 @@
     <h2 class="title">Certificações</h2>
     <div id="cards"></div>
   </section>
-  <section id="contact">
-    <div class="form">
-    </div>
-    <div class="infos">
-    </div>
-  </section>
-  <footer>
-    <p>© Vinicius Pacheco/Todos os direitos reservados</p>
-  </footer>
+  <div class="contact_footer">
+    <section id="contact">
+      <div class="contact-form">
+        <h2>CONTATO</h2>
+        <form>
+          <div class="form-group">
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome e sobrenome" required>
+          </div>
+          <div class="form-group">
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+          </div>
+          <div class="form-group">
+            <label for="subject"></label>
+            <input type="text" id="subject" name="subject" placeholder="Assunto" required>
+          </div>
+          <div class="form-group">
+            <label for="message"></label>
+            <textarea id="message" name="message" placeholder="Escreva sua mensagem" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+      <div class="contact-info">
+        <h2>Email para contato</h2>
+        <ul>
+          <li>
+            <span class="icon email"></span>
+            <a href="mailto:seuemail@example.com">vspacheco95@gmail.com</a>
+          </li>
+        </ul>
+        <h2>Redes Sociais</h2>
+          <ul>
+            <li>
+              <span class="icon linkedin"></span>
+              <a href="https://www.linkedin.com/seuperfil" target="_blank">LinkedIn</a>
+            </li>
+            <li>
+              <span class="icon github"></span>
+              <a href="https://github.com/seuperfil" target="_blank">GitHub</a>
+            </li>
+            <li>
+              <span class="icon behance"></span>
+              <a href="https://www.behance.net/seuperfil" target="_blank">Behance</a>
+            </li>
+            <li>
+              <span class="icon artstation"></span>
+              <a href="https://www.artstation.com/seuperfil" target="_blank">ArtStation</a>
+            </li>
+          </ul>
+      </div>
+    </section>
+    <footer>
+      <p>© Vinicius Pacheco/Todos os direitos reservados</p>
+    </footer>
+  </div>
 </body>
 </html>
