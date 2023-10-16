@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="styles/sass/styles.css">
   <!-- JAVASCRIPT -->
   <script defer src="js/script.js"></script>
+  <script src="https://lottie.host/c8900bfa-44a4-461c-ac7c-1ba3b902a8fe/4zKbcpBrdW.json"></script>
   <title>Portfólio</title>
 </head>
 <body>
@@ -25,12 +26,12 @@
     <img class="header_logo" src="assets/favicon/favicon.ico" alt="Logo">
     <nav class="header_navbar">
       <ul>
-          <li><a href="#inicio" class="active">Início</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#certificacoes">Certificações</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="#main" class="active">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#habilities">Habilidades</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#certifications">Certificações</a></li>
+          <li><a href="#contact">Contato</a></li>
       </ul>
       <div class="header_languages">
         <li><a href="#" id="language-pt" data-lang="pt"><img src="assets/icons/brasil.svg" alt="Bandeira do Brasil"></a></li>
@@ -38,7 +39,7 @@
       </div>
     </nav>
   </header>
-  <main class="main" aria-label="Pagina principa">
+  <main id="main" class="main" aria-label="Pagina principa">
     <div class="main_infos">
       <div class="container-shape" id="main_container-shape">
         <!-- Conteúdo aqui -->
@@ -66,6 +67,11 @@
   <section id="about">
     <h2 class="title">Sobre mim</h2>
     <p>Olá, sou <strong>Vinícius Pacheco</strong>, um desenvolvedor front-end e designer apaixonado por arte, games e tecnologia. Combinando criatividade e habilidades técnicas, estou pronto para dar vida às suas ideias unindo estética e funcionalidade. Vamos juntos explorar o mundo digital e criar experiências inríveis!</p>
+
+    <div class="animation">
+      <script defer src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+      <dotlottie-player src="https://lottie.host/c8900bfa-44a4-461c-ac7c-1ba3b902a8fe/4zKbcpBrdW.json" background="transparent" speed=".5" style="width: 500px; height: 500px;" loop autoplay></dotlottie-player>
+    </div>
   </section>
   <section id="habilities">
     <h2 class="title">Habilidades</h2>
@@ -141,9 +147,30 @@
   </section>
   <section id="projects">
     <h2 class="title">Projetos</h2>
-    <div id="carrousel">
-      <img src="" alt="">
+    <div class="carrousel">
+      <div class="frames">
+        <div class="frame-left">
+          <img class="frame-image_small" src="assets/images/frame.svg" alt="">
+          <div class="thumbnail_small">
+            <img class="project-image_small" src="assets/images/projects/Artflix.png" alt="Imagem do projeto Artflix">
+          </div>
+        </div>
+        <div class="frame">
+          <img class="frame-image" src="assets/images/frame.svg" alt="">
+          <div class="thumbnail">
+            <img class="project-image" src="assets/images/projects/Artflix.png" alt="Imagem do projeto Artflix">
+          </div>
+        </div>
+        <div class="frame-right">
+          <img class="frame-image_small" src="assets/images/frame.svg" alt="">
+          <div class="thumbnail_small">
+            <img class="project-image_small" src="assets/images/projects/Artflix.png" alt="Imagem do projeto Artflix">
+          </div>
+        </div>
+      </div>
     </div>
+    <button class="prev">Anterior</button>
+    <button class="next">Próxima</button>
   </section>
   <section id="certifications">
     <h2 class="title">Certificações</h2>
@@ -178,7 +205,7 @@
         <ul>
           <li>
             <span class="icon email"></span>
-            <a href="mailto:vspacheco95@gmail.com"><img src="assets/icons/email.svg" alt=""> vspacheco95@gmail.com</a>
+            <a href="mailto:vspacheco95@gmail.com"><img src="assets/icons/email.svg" alt="">vspacheco95@gmail.com</a>
           </li>
         </ul>
         <h2 class="footer_social-media">Redes Sociais</h2>

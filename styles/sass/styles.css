@@ -5,13 +5,18 @@
   list-style: none;
   padding: 0;
   text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+html {
+  max-width: 100vw;
 }
 
 body {
   background-color: #0F0F0F;
   color: #fff;
   font-family: "Orbitron";
-  max-width: auto;
+  width: 100%;
   height: 100vh;
 }
 body:before {
@@ -74,7 +79,7 @@ body a {
 body .title {
   font-size: 2rem;
   font-weight: 500;
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
 }
 body .title::before {
   background-image: url("../../assets/images/graphic.svg");
@@ -114,9 +119,9 @@ body .header_navbar ul li {
 }
 body .header_navbar ul .active {
   background: linear-gradient(180deg, #F9E650 0%, #E8A702 100%);
-  box-shadow: 0px 0px 10px 0px #EBC634;
+  box-shadow: 0px 0px 10px 0px #C77318;
   border: 1px solid #E8A702;
-  color: #0F0F0F;
+  color: #1A1A1A;
   font-weight: bold;
 }
 body .header_navbar ul a {
@@ -126,7 +131,7 @@ body .header_navbar ul a {
 }
 body .header_navbar ul a:hover {
   background: linear-gradient(180deg, #F9E650 0%, #E8A702 100%);
-  box-shadow: 0px 0px 10px 0px #EBC634;
+  box-shadow: 0px 0px 10px 0px #C77318;
   border: 1px solid #E8A702;
   color: #0F0F0F;
   font-weight: bold;
@@ -152,7 +157,7 @@ body .header_navbar .header_languages li a img {
 body .header_navbar .header_languages li a img:hover {
   cursor: pointer;
   border: 1px solid #EBC634;
-  box-shadow: 0px 0px 10px 0px #EBC634;
+  box-shadow: 0px 0px 10px 0px #C77318;
 }
 body .main {
   background: radial-gradient(circle, #333333 0%, #0F0F0F 55%);
@@ -315,7 +320,7 @@ body .main_infos #name {
 }
 body .main_infos #profission {
   color: #f9e650;
-  text-shadow: 0px 0px 15px #EBC634;
+  text-shadow: 0px 0px 15px #C77318;
   font-family: "roboto mono";
   font-weight: 400;
   font-size: 1.5rem;
@@ -395,7 +400,7 @@ body .main_infos #main_cta .main_btn {
 }
 body .main_infos #main_cta .main_btn:hover {
   background: linear-gradient(180deg, #F9E650 0%, #E8A702 100%);
-  box-shadow: 0px 0px 10px 0px #EBC634;
+  box-shadow: 0px 0px 20px 0px #C77318;
   border: none;
   color: #0F0F0F;
   font-weight: bold;
@@ -435,7 +440,7 @@ body .main_infos #main_cta .main_cv .button__icon .svg {
 }
 body .main_infos #main_cta .main_cv:hover {
   border: none;
-  box-shadow: 0px 0px 10px 0px #EBC634;
+  box-shadow: 0px 0px 20px 0px #C77318;
 }
 body .main_infos #main_cta .main_cv:hover .button__text {
   color: transparent;
@@ -498,11 +503,19 @@ body #about .title::before {
 body #about p {
   font-size: 1.4rem;
   line-height: 1.7;
-  padding: 0 80px;
+  letter-spacing: 1.4px;
+  padding: 0 4rem;
   width: 60%;
 }
 body #about strong {
   color: #f9e650;
+  text-shadow: 0px 0px 10px #C77318;
+}
+body #about .animation {
+  position: absolute;
+  top: 15%;
+  right: 0;
+  z-index: 1;
 }
 body #habilities {
   position: relative;
@@ -528,6 +541,7 @@ body #habilities::after {
 body #habilities .title {
   text-align: center;
   padding-top: 5rem;
+  padding-bottom: 3rem;
 }
 body #habilities .title::before {
   background-image: url("../../assets/images/graphic.svg");
@@ -606,6 +620,7 @@ body #projects::after {
 body #projects .title {
   text-align: center;
   padding-top: 5rem;
+  margin-bottom: 8rem;
 }
 body #projects .title::before {
   background-image: url("../../assets/images/graphic.svg");
@@ -619,6 +634,78 @@ body #projects .title::before {
   left: 30.5rem;
   top: 4.7rem;
   width: 100%;
+}
+body #projects .carrousel {
+  display: flex;
+  width: 100vw;
+  height: 28rem;
+}
+body #projects .carrousel .frames {
+  display: flex;
+  width: 100%;
+}
+body #projects .carrousel .frames .frame {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28rem;
+  height: 100%;
+  box-shadow: 0px 0px 50px 5px #C77318;
+  z-index: 10;
+}
+body #projects .carrousel .frames .frame .frame-image {
+  position: absolute;
+  width: 115%;
+  height: 115%;
+}
+body #projects .carrousel .frames .frame .project-image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body #projects .carrousel .frames .frame-right {
+  height: 60%;
+  width: 22rem;
+  z-index: 1;
+}
+body #projects .carrousel .frames .frame-right .frame-image_small {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  z-index: 1;
+}
+body #projects .carrousel .frames .frame-right .project-image_small {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+body #projects .carrousel .frames .frame-left {
+  height: 22rem;
+  width: 22rem;
+  z-index: 0;
+}
+body #projects .carrousel .frames .frame-left .frame-image_small {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  z-index: 1;
+}
+body #projects .carrousel .frames .frame-left .project-image_small {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body #projects .carrousel .prev {
+  left: 10px;
+}
+body #projects .carrousel .next {
+  right: 10px;
 }
 body #certifications {
   position: relative;
@@ -917,11 +1004,28 @@ body #contact .contact-info a {
   align-items: center;
   color: #000;
   text-decoration: none;
+  position: relative;
   font-size: 1.5rem;
+  transition: 2s;
+}
+body #contact .contact-info a::before {
+  border-radius: 0px 0px 0px 5px;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 15px;
+  background-color: #0F0F0F;
+  bottom: 0.5px;
+  left: 3rem;
+  transition: width 1s ease;
+}
+body #contact .contact-info a:hover::before {
+  width: 100%;
 }
 body #contact .contact-info a img {
   padding-right: 1rem;
   width: 4.5rem;
+  transition: 0.2s;
 }
 body footer {
   color: #0F0F0F;
