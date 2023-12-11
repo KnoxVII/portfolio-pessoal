@@ -164,7 +164,7 @@ body .main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 92%;
+  height: 100%;
 }
 body .main::before {
   content: "";
@@ -768,39 +768,92 @@ body #certifications .title::before {
   top: 4.7rem;
   width: 100%;
 }
-body .contact_footer {
+body #certifications .certifications-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body #certifications .certifications-container .certification-card {
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left;
+  background-color: #080808;
+  height: 20em;
+  width: 18em;
+  position: relative;
+}
+body #certifications .certifications-container .certification-card h2 {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+body #certifications .certifications-container .certification-card ul {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  z-index: 1;
+}
+body #certifications .certifications-container .certification-card ul li {
+  margin-bottom: 10px;
+}
+body #certifications .certifications-container .certification-card ul a {
+  text-decoration: none;
+  color: #EBC634;
+  font-weight: bold;
+}
+
+/* Estilo para as setas de navegação */
+.seta-esquerda,
+.seta-direita {
+  cursor: pointer;
+  font-size: 24px;
+  margin-top: 20px;
+}
+.seta-esquerda .contact_footer,
+.seta-direita .contact_footer {
   background: url("../../assets/images/hud.svg") no-repeat center bottom, linear-gradient(#E8A702, #F9E650);
   background-size: contain;
 }
-body #contact {
+.seta-esquerda #contact,
+.seta-direita #contact {
   align-items: center;
   display: flex;
   justify-content: space-between;
   padding: 3rem 5%;
   position: relative;
 }
-body #contact .contact-form {
+.seta-esquerda #contact .contact-form,
+.seta-direita #contact .contact-form {
   flex: 1;
   border-radius: 20px;
   padding: 2rem;
   text-align: center;
 }
-body #contact .contact-form h2 {
+.seta-esquerda #contact .contact-form h2,
+.seta-direita #contact .contact-form h2 {
   color: #0F0F0F;
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
-body #contact .contact-form form .form-group {
+.seta-esquerda #contact .contact-form form .form-group,
+.seta-direita #contact .contact-form form .form-group {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
 }
-body #contact .contact-form form .form-group label {
+.seta-esquerda #contact .contact-form form .form-group label,
+.seta-direita #contact .contact-form form .form-group label {
   color: #0F0F0F;
   font-weight: bold;
 }
-body #contact .contact-form form .form-group input, body #contact .contact-form form .form-group textarea {
+.seta-esquerda #contact .contact-form form .form-group input, .seta-esquerda #contact .contact-form form .form-group textarea,
+.seta-direita #contact .contact-form form .form-group input,
+.seta-direita #contact .contact-form form .form-group textarea {
   color: #fff;
   background-color: #0F0F0F;
   border: none;
@@ -810,10 +863,12 @@ body #contact .contact-form form .form-group input, body #contact .contact-form 
   margin-top: 0.5rem;
   padding: 0.5rem;
 }
-body #contact .contact-form form .form-group #message {
+.seta-esquerda #contact .contact-form form .form-group #message,
+.seta-direita #contact .contact-form form .form-group #message {
   height: 200px;
 }
-body #contact .contact-form form .btn-send {
+.seta-esquerda #contact .contact-form form .btn-send,
+.seta-direita #contact .contact-form form .btn-send {
   box-sizing: border-box;
   padding: 15px 20px;
   display: flex;
@@ -828,26 +883,34 @@ body #contact .contact-form form .btn-send {
   overflow: hidden;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.137);
 }
-body #contact .contact-form form .btn-send span {
+.seta-esquerda #contact .contact-form form .btn-send span,
+.seta-direita #contact .contact-form form .btn-send span {
   letter-spacing: 0.1rem;
   transition: 0.3s;
   box-sizing: border-box;
   position: relative;
   background: inherit;
 }
-body #contact .contact-form form .btn-send span::before {
+.seta-esquerda #contact .contact-form form .btn-send span::before,
+.seta-direita #contact .contact-form form .btn-send span::before {
   box-sizing: border-box;
   position: absolute;
   content: "";
   background: inherit;
 }
-body #contact .contact-form form .btn-send:hover, body #contact .contact-form form .btn-send:focus {
+.seta-esquerda #contact .contact-form form .btn-send:hover, .seta-esquerda #contact .contact-form form .btn-send:focus,
+.seta-direita #contact .contact-form form .btn-send:hover,
+.seta-direita #contact .contact-form form .btn-send:focus {
   background: rgb(51, 51, 51);
 }
-body #contact .contact-form form .btn-send:hover span, body #contact .contact-form form .btn-send:focus span {
+.seta-esquerda #contact .contact-form form .btn-send:hover span, .seta-esquerda #contact .contact-form form .btn-send:focus span,
+.seta-direita #contact .contact-form form .btn-send:hover span,
+.seta-direita #contact .contact-form form .btn-send:focus span {
   color: #FAC921;
 }
-body #contact .contact-form form .btn-send:hover span::before, body #contact .contact-form form .btn-send:focus span::before {
+.seta-esquerda #contact .contact-form form .btn-send:hover span::before, .seta-esquerda #contact .contact-form form .btn-send:focus span::before,
+.seta-direita #contact .contact-form form .btn-send:hover span::before,
+.seta-direita #contact .contact-form form .btn-send:focus span::before {
   -webkit-animation: chitchat linear both 1.2s;
           animation: chitchat linear both 1.2s;
 }
@@ -999,30 +1062,36 @@ body #contact .contact-form form .btn-send:hover span::before, body #contact .co
     right: 0;
   }
 }
-body #contact .contact-info {
+.seta-esquerda #contact .contact-info,
+.seta-direita #contact .contact-info {
   flex: 1;
   padding: 2rem;
   margin-bottom: 0.5rem;
   height: 55vh;
 }
-body #contact .contact-info h2 {
+.seta-esquerda #contact .contact-info h2,
+.seta-direita #contact .contact-info h2 {
   color: #0F0F0F;
   font-size: 2.5rem;
   margin-bottom: 0.3rem;
 }
-body #contact .contact-info ul {
+.seta-esquerda #contact .contact-info ul,
+.seta-direita #contact .contact-info ul {
   list-style: none;
   padding: 0;
 }
-body #contact .contact-info ul li {
+.seta-esquerda #contact .contact-info ul li,
+.seta-direita #contact .contact-info ul li {
   align-items: center;
   display: flex;
   padding-bottom: 0.5rem;
 }
-body #contact .contact-info .footer_social-media {
+.seta-esquerda #contact .contact-info .footer_social-media,
+.seta-direita #contact .contact-info .footer_social-media {
   padding-top: 1.5rem;
 }
-body #contact .contact-info a {
+.seta-esquerda #contact .contact-info a,
+.seta-direita #contact .contact-info a {
   display: flex;
   align-items: center;
   color: #000;
@@ -1031,7 +1100,8 @@ body #contact .contact-info a {
   font-size: 1.5rem;
   transition: 2s;
 }
-body #contact .contact-info a::before {
+.seta-esquerda #contact .contact-info a::before,
+.seta-direita #contact .contact-info a::before {
   border-radius: 0px 0px 0px 5px;
   content: "";
   position: absolute;
@@ -1042,15 +1112,18 @@ body #contact .contact-info a::before {
   left: 3rem;
   transition: width 1s ease;
 }
-body #contact .contact-info a:hover::before {
+.seta-esquerda #contact .contact-info a:hover::before,
+.seta-direita #contact .contact-info a:hover::before {
   width: 100%;
 }
-body #contact .contact-info a img {
+.seta-esquerda #contact .contact-info a img,
+.seta-direita #contact .contact-info a img {
   padding-right: 1rem;
   width: 4.5rem;
   transition: 0.2s;
 }
-body footer {
+.seta-esquerda footer,
+.seta-direita footer {
   color: #0F0F0F;
   font-weight: bold;
   padding-bottom: 2rem;

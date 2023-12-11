@@ -58,7 +58,7 @@ body
     80%
       transform: translate3d(-9rem, 1rem, 0)
     90%
-      transform: translate3d(6rem, -5rem, 0)
+      transform: translate3d(6rem, -5rem, 0)    
     to
       transform: translate3d(-7rem, 0, 0)
 
@@ -155,7 +155,7 @@ body
     background-position: center
     background-repeat: no-repeat
     background-size: contain
-    height: 92%
+    height: 100%
     
     &::before
       content: ""
@@ -741,6 +741,55 @@ body
         left: 28rem
         top: 4.7rem
         width: 100%
+
+    .certifications-container 
+      text-align: center
+      display: flex
+      align-items: center
+      justify-content: center
+
+
+      .certification-card 
+        display: inline-block
+        margin: 20px
+        padding: 20px
+        box-sizing: border-box
+        text-align: left
+        background-color: #080808
+        height: 20em
+        width: 18em
+        position: relative
+        
+        h2 
+          font-size: 1.8em
+          margin-bottom: 1em
+        
+
+        ul 
+          list-style: none
+          padding: 0
+          position: absolute
+          bottom: 20px
+          width: 100%
+          z-index: 1
+
+          li 
+            margin-bottom: 10px
+          
+
+          a 
+            text-decoration: none
+            color: variables.$dark-yellow
+            font-weight: bold
+
+
+/* Estilo para as setas de navegação */
+.seta-esquerda,
+.seta-direita 
+  cursor: pointer
+  font-size: 24px
+  margin-top: 20px
+  
 
   .contact_footer
     background: url('../../assets/images/hud.svg') no-repeat center bottom, linear-gradient(#E8A702, #F9E650)
