@@ -756,11 +756,13 @@ body
         box-sizing: border-box
         text-align: left
         background-color: #080808
+        box-shadow: 0px 0px 15px 2px variables.$dark-orange
         height: 20em
         width: 18em
         position: relative
         
         h2 
+          color: variables.$light-yellow
           font-size: 1.8em
           margin-bottom: 1em
         
@@ -779,17 +781,30 @@ body
 
           a 
             text-decoration: none
-            color: variables.$dark-yellow
+            color: variables.$light-yellow
             font-weight: bold
 
+    .prev
+      background: transparent 
+      border: none
+      display: flex
+      align-items: center
+      justify-content: center
+      position: absolute
+      left: 3.8rem
+      top: 44%
 
-/* Estilo para as setas de navegação */
-.seta-esquerda,
-.seta-direita 
-  cursor: pointer
-  font-size: 24px
-  margin-top: 20px
-  
+    .next
+      background: transparent 
+      border: none
+      margin:  0 auto
+      position: absolute
+      right: 3.8rem
+      top: 44%
+
+      &::before,&::after
+        align-items: center
+        justify-content: center           
 
   .contact_footer
     background: url('../../assets/images/hud.svg') no-repeat center bottom, linear-gradient(#E8A702, #F9E650)
