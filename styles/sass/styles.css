@@ -578,8 +578,27 @@ body #habilities .technology_box .glass_container {
   display: flex;
   justify-content: center;
   height: 8rem;
+  overflow: hidden;
   width: 8rem;
-  transition: background 0.3s;
+  z-index: 1;
+  transition: all 0.3s;
+}
+body #habilities .technology_box .glass_container:hover {
+  transform: scale(1.1);
+}
+body #habilities .technology_box .glass_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(253, 232, 72, 0.631372549) 0%, rgba(255, 196, 47, 0.5254901961) 100%);
+  transform: skewX(45deg) translateX(180px);
+  transition: 0.3s ease;
+}
+body #habilities .technology_box .glass_container:hover::before {
+  transform: skewX(45deg) translateX(-135px);
 }
 body #habilities .technology_box .glass_container .technology_icon {
   position: relative;
