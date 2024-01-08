@@ -1038,28 +1038,77 @@ body
 
 // RESPONSIVIDADE
 @media screen and (max-width: 500px)
-  .main
-    max-width: 100%
-    &::before
-      display: none
-
-    &_perfil-photo
-      display: none 
-
-    .main_infos
-      max-width: 100%
-      padding: 5rem 1rem 1rem 5rem
-
-      #name
-        font-size: 2rem
-
-      #profission
-        font-size: 1rem
-        padding: 0 0 .8rem 0  
-
-
-
-      
+  body
+    .title
+      font-size: 2rem
+      margin-bottom: 2rem
     
+    .main
+      max-width: 100%
+      &::before
+        display: none
+
+      &_perfil-photo
+        display: none 
+
+      .main_infos
+        max-width: 100%
+        padding: 1rem 1rem 1rem 1rem
+
+        #name
+          font-size: 2.2rem
+
+        #profission
+          font-size: 1rem
+          padding: 0 0 3rem 0  
+
+        .main_social-media  
+          padding: 0 0 2rem 0  
+
+          .icon_box a 
+            width: 4rem
+            height: 4rem
+
+          img
+            width: 3rem  
+    
+    #about
+      &::after
+        display: none
+
+      .title
+        padding-left: 7.5rem
+        padding-top: 5rem
+
+        &::before
+          left: 3rem
+          top: 4.7rem
+
+      p
+        font-size: 1.2rem
+        line-height: 1.8
+        letter-spacing: 1.3px
+        padding: 3rem 2rem 0 2rem 
+        width: 100%    
+
+      .animation   
+        display: none  
+
+    #habilities
+      &::after
+        display: none
+
+      .technology_box
+        grid-template-columns: repeat(3, 1fr)
+
+        .glass_container
+          border-radius: 20px
+          height: 6rem
+          width: 6rem
+
+          .technology_icon
+            width: 4rem  
+            height: 4rem  
+
 
 

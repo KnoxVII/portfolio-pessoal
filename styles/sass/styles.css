@@ -1141,24 +1141,74 @@ body footer {
 }
 
 @media screen and (max-width: 500px) {
-  .main {
-    max-width: 100%;
-  }
-  .main::before {
-    display: none;
-  }
-  .main_perfil-photo {
-    display: none;
-  }
-  .main .main_infos {
-    max-width: 100%;
-    padding: 5rem 1rem 1rem 5rem;
-  }
-  .main .main_infos #name {
+  body .title {
     font-size: 2rem;
+    margin-bottom: 2rem;
   }
-  .main .main_infos #profission {
+  body .main {
+    max-width: 100%;
+  }
+  body .main::before {
+    display: none;
+  }
+  body .main_perfil-photo {
+    display: none;
+  }
+  body .main .main_infos {
+    max-width: 100%;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  body .main .main_infos #name {
+    font-size: 2.2rem;
+  }
+  body .main .main_infos #profission {
     font-size: 1rem;
-    padding: 0 0 0.8rem 0;
+    padding: 0 0 3rem 0;
+  }
+  body .main .main_infos .main_social-media {
+    padding: 0 0 2rem 0;
+  }
+  body .main .main_infos .main_social-media .icon_box a {
+    width: 4rem;
+    height: 4rem;
+  }
+  body .main .main_infos .main_social-media img {
+    width: 3rem;
+  }
+  body #about::after {
+    display: none;
+  }
+  body #about .title {
+    padding-left: 7.5rem;
+    padding-top: 5rem;
+  }
+  body #about .title::before {
+    left: 3rem;
+    top: 4.7rem;
+  }
+  body #about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    letter-spacing: 1.3px;
+    padding: 3rem 2rem 0 2rem;
+    width: 100%;
+  }
+  body #about .animation {
+    display: none;
+  }
+  body #habilities::after {
+    display: none;
+  }
+  body #habilities .technology_box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  body #habilities .technology_box .glass_container {
+    border-radius: 20px;
+    height: 6rem;
+    width: 6rem;
+  }
+  body #habilities .technology_box .glass_container .technology_icon {
+    width: 4rem;
+    height: 4rem;
   }
 }/*# sourceMappingURL=styles.css.map */
