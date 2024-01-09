@@ -1199,6 +1199,9 @@ body footer {
   body #habilities::after {
     display: none;
   }
+  body #habilities .title::before {
+    left: 1.3rem;
+  }
   body #habilities .technology_box {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1210,5 +1213,98 @@ body footer {
   body #habilities .technology_box .glass_container .technology_icon {
     width: 4rem;
     height: 4rem;
+  }
+  body #projects::after {
+    display: none;
+  }
+  body #projects .title {
+    margin-bottom: 5rem;
+  }
+  body #projects .title::before {
+    left: 3rem;
+  }
+  body #projects .carrousel .frames .frame {
+    align-items: center;
+    box-shadow: 0px 0px 50px 5px #C77318;
+    display: flex;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    width: 55rem;
+    height: 100%;
+    z-index: 10;
+  }
+  body #projects .carrousel .frames .frame .frame-image {
+    display: none;
+  }
+  body #projects .carrousel .frames .frame .project-image {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body #projects .carrousel .frame-right {
+    height: 60%;
+    width: 22rem;
+    z-index: 1;
+  }
+  body #projects .carrousel .frame-right .frame-image_small {
+    display: none;
+  }
+  body #projects .carrousel .frame-right .project-image_small {
+    height: 100%;
+    width: 100%;
+    right: 9.5rem;
+    top: 1.5rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+  }
+  body #projects .carrousel .frame-left {
+    height: 60%;
+    width: 22rem;
+    z-index: 1;
+  }
+  body #projects .carrousel .frame-left .frame-image_small {
+    display: none;
+  }
+  body #projects .carrousel .frame-left .project-image_small {
+    height: 100%;
+    width: 100%;
+    left: 9.5rem;
+    top: 1.5rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+  }
+  body #projects .prev {
+    display: none;
+  }
+  body #projects .next {
+    display: none;
+  }
+  body #certifications::after {
+    display: none;
+  }
+  body #certifications .title {
+    margin-bottom: 4rem;
+  }
+  body #certifications .title::before {
+    left: 0.5rem;
+  }
+  body #certifications .certifications-container .certification-card {
+    margin: 20px;
+    padding: 20px;
+    height: 25rem;
+    width: 40rem;
+  }
+  body #certifications .prev {
+    display: none;
+  }
+  body #certifications .next {
+    display: none;
+  }
+  body footer {
+    font-size: 0.8rem;
   }
 }/*# sourceMappingURL=styles.css.map */
